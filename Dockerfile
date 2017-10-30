@@ -1,4 +1,5 @@
 FROM jfloff/alpine-python:2.7-slim
+
 RUN /entrypoint.sh \
   -a openssl-dev \
   -a g++ \
@@ -8,4 +9,5 @@ RUN /entrypoint.sh \
   -a git \
   -p simplejson \
   -p requests
-  RUN pip install git+https://github.com/pymssql/pymssql.git
+
+RUN pip install git+https://github.com/pymssql/pymssql.git
