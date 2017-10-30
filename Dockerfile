@@ -8,6 +8,6 @@ RUN /entrypoint.sh \
   -a freetds-dev \
   -a git \
   -p simplejson \
-  -p requests \
+  -p requests
 
 RUN pip install git+https://github.com/pymssql/pymssql.git
