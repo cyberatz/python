@@ -7,6 +7,7 @@ RUN /entrypoint.sh \
   -a gcc \
   -a freetds-dev \
   -a git \
+  -p cython \
   -p simplejson \
   -p requests
 
