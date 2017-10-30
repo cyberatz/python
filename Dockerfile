@@ -1,12 +1,11 @@
-FROM python:2
-
-# WORKDIR /usr/src/app
-
-COPY requirements.txt ./
-RUN pip install -r requirements.txt
-
-COPY . .
-
-# CMD [ “python”, “./your-daemon-or-script.py” ]
-# CMD [ “python”, “-v”]
-CMD python
+FROM jfloff/alpine-python:2.7-slim
+RUN /entrypoint.sh \
+  -a openssl-dev \
+  -a g++ \
+  -a python-dev \
+  -a gcc \
+  -a freetds-dev \
+  -a git \
+  -p simplejson \
+  -p requests
+  RUN pip install git+https://github.com/pymssql/pymssql.git
