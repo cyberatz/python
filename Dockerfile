@@ -10,7 +10,7 @@ RUN /entrypoint.sh \
   -a cython \
   -a cython-dev \
   -p simplejson \
-  -p requests \ 
-  -p pymssql
+  -p requests  
+#  -p pymssql
 
-#RUN pip install git+https://github.com/pymssql/pymssql.git
+RUN pip install git+https://github.com/pymssql/pymssql.git
