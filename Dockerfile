@@ -6,6 +6,7 @@ RUN /entrypoint.sh \
   -a python-dev \
   -a gcc \
   -a freetds-dev \
+  -a freetds \
   -a git \
   -a cython \
   -a cython-dev \
