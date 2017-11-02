@@ -1,1 +1,6 @@
-Python runtime environment
+# Python runtime environment
+
+With latest:
+- pymssql
+- SQLAlchemy
+- requests
