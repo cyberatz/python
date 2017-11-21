@@ -12,6 +12,7 @@ RUN /entrypoint.sh \
   -a cython-dev \
   -p simplejson \
   -p requests  \
-  -p SQLAlchemy
+  -p SQLAlchemy \
+  -p chardet
 
 RUN pip install git+https://github.com/pymssql/pymssql.git
