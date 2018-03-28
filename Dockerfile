@@ -13,6 +13,7 @@ RUN /entrypoint.sh \
   -p simplejson \
   -p requests  \
   -p SQLAlchemy \
-  -p chardet
+  -p chardet \
+  -p openpyxl
 
 RUN pip install git+https://github.com/pymssql/pymssql.git
