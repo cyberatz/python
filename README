@@ -4,3 +4,4 @@ With latest:
 - pymssql
 - SQLAlchemy
 - requests
+- openpyxl
