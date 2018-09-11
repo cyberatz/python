@@ -1,5 +1,5 @@
 FROM jfloff/alpine-python:2.7-slim
-
+RUN apk --no-cache add git
 RUN /entrypoint.sh \
   -a openssl-dev \
   -a g++ \
@@ -7,7 +7,6 @@ RUN /entrypoint.sh \
   -a gcc \
   -a freetds-dev \
   -a freetds \
-  -a git \
   -a cython \
   -a cython-dev \
   -a py-mysqldb \
