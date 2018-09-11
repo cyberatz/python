@@ -1,5 +1,6 @@
 FROM jfloff/alpine-python:2.7-slim
 RUN apk --no-cache add git
+RUN pip install git+https://github.com/pymssql/pymssql.git
 RUN /entrypoint.sh \
   -a openssl-dev \
   -a g++ \
@@ -16,4 +17,4 @@ RUN /entrypoint.sh \
   -p chardet \
   -p openpyxl
 
-RUN pip install git+https://github.com/pymssql/pymssql.git
+
