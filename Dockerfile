@@ -5,6 +5,7 @@ RUN pip install git+https://github.com/pymssql/pymssql.git
 RUN /entrypoint.sh \
   -a g++ \
   -a py-mysqldb \
+  -p pyodbc \
   -p simplejson \
   -p requests  \
   -p SQLAlchemy \
