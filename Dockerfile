@@ -10,6 +10,7 @@ RUN /entrypoint.sh \
   -a git \
   -a cython \
   -a cython-dev \
+  -a py-mysqldb \
   -p simplejson \
   -p requests  \
   -p SQLAlchemy \
