@@ -5,3 +5,4 @@ With latest:
 - SQLAlchemy
 - requests
 - openpyxl
+- timeit
